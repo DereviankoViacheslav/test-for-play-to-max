@@ -10,7 +10,6 @@ const field = [
 
 function generateFieldData() {
   const gameField = [];
-  field.length
   for (let y = 0; y < field.length; y++) {
     for (let x = 0; x < field[y].length; x++) {
       let value = field[y][x];
@@ -84,4 +83,4 @@ function showField(selectedItems) {
 
 const gameFieldData = generateFieldData();
 showField();
-showField(step(gameFieldData, 1, 3));
+showField(step(gameFieldData, 3, 2));
